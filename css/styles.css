@@ -1,0 +1,288 @@
+@import url(reset.css);
+
+body {
+  font-size: 17px;
+}
+div {
+  box-sizing: border-box;
+}
+
+.btn-default {
+  color: white;
+  background-color: #444445;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 15px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.btn-default:hover {
+  background-color: #333333;
+}
+
+.page-start--container {
+  width: 100%;
+  background: linear-gradient(#4e9add, #4e61c0);
+  display: flex;
+  justify-content: space-between;
+}
+.page-start--column:first-child {
+  padding-top: 80px;
+  padding-left: 100px;
+}
+.page-start--texts {
+  color: white;
+}
+.page-start--texts > h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.page-start--texts > p {
+  margin-bottom: 3px;
+}
+.page-start--column:last-child {
+  width: 30%;
+  margin-top: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#photo-iphone {
+  width: 100%;
+}
+
+.portpolio--container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portpolio--texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portpolio--texts > h1 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title > span {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.title > h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.services--container {
+  width: 100%;
+  height: 400px;
+  background-color: #4e61c0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 60px;
+}
+.services--services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services--row {
+  display: flex;
+}
+.services--service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 20px;
+}
+.services--service span:nth-child(2) {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.services--service span:last-child {
+  font-size: 16px;
+}
+.services--service-icon {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4e61c0;
+  border-radius: 50%;
+}
+
+.can-do--container {
+  width: 100%;
+  padding: 60px 150px 20px 150px;
+}
+.can-do--images--container {
+  margin-top: 50px;
+  width: 100%;
+}
+.can-do--images-row {
+  display: flex;
+}
+.can-do--image {
+  width: 50%;
+  line-height: 0px;
+  position: relative;
+}
+.can-do--texts {
+  line-height: normal;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: white;
+  width: 80%;
+}
+.can-do--texts > h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6%;
+}
+.can-do--texts > p {
+  font-size: 16px;
+}
+.can-do--image img {
+  width: 100%;
+}
+.animation-white-area {
+  width: 100%;
+  height: 100%;
+}
+.animation-white {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0px solid white;
+  transition: all 0.5s ease;
+}
+.animation-white-area:hover .animation-white {
+  border: 30px solid white;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px;
+}
+footer > span {
+  font-size: 16px;
+}
+.icons--container {
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  width: 80px;
+  height: 80px;
+  background-color: #4e61c0;
+  margin: 50px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.icon i {
+  color: white;
+}
+@media screen and (max-width: 992px) {
+  .page-start--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-start--column:first-child {
+    padding: 60px 0px 0px 0px;
+  }
+  .page-start--column:last-child {
+    padding: 0px;
+    width: 50%;
+  }
+  .page-start--texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .can-do--container {
+    padding: 40px 50px 20px 50px;
+  }
+  .services--container {
+    height: 600px;
+  }
+  .services--service {
+    margin: 40px 60px;
+  }
+  .services--row {
+    flex-direction: column;
+  }
+  .animation-white-area:hover .animation-white {
+    border: 20px solid white;
+  }
+}
+@media screen and (max-width: 768px) {
+  .can-do--container {
+    padding: 40px 10px 0px 10px;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .services--services {
+    flex-direction: column;
+  }
+  .services--container {
+    height: 1100px;
+  }
+  .animation-white-area:hover .animation-white {
+    border: 15px solid white;
+  }
+}
+@media screen and (max-width: 420px) {
+  body {
+    font-size: 12px;
+  }
+  .btn-default {
+    margin-top: 30px;
+  }
+  .page-start--texts > h1 {
+    font-size: 30px;
+  }
+  .portpolio--texts > h1 {
+    font-size: 15px;
+  }
+  .can-do--texts > h1 {
+    font-size: 16px;
+  }
+  .can-do--texts > p {
+    font-size: 12px;
+  }
+}
