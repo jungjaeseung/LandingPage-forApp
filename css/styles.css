@@ -285,4 +285,7 @@ footer > span {
   .can-do--texts > p {
     font-size: 12px;
   }
+  .animation-white-area:hover .animation-white {
+    border: 8px solid white;
+  }
 }
